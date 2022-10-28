@@ -1,5 +1,6 @@
 .app {
   max-width: 1152px;
+  width: 90%;
   margin: 64px auto 0;
 }
 
@@ -36,8 +37,30 @@
   right: 20%;
 }
 
+/* links */
+
 .links {
+  margin-top: 56px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
-.link {
+.link,
+.link:link,
+.link:visited {
+  display: block;
+  width: 100%;
+  background: #eaecf0;
+  text-align: center;
+  padding: 24px 0;
+  text-decoration: none;
+  border: 1px solid #eaecf0;
+  border-radius: 8px;
+  color: inherit;
+  transition: all 300ms ease-in-out;
+}
+
+.link:hover {
+  background: #d0d5dd;
 }

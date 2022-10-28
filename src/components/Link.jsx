@@ -1,7 +1,19 @@
-// import React from 'react';
+import React from 'react';
 
-// const Link = () => {
-//   return <div className="link"></div>;
-// };
+const Link = ({ item: { link, title, id } }) => {
+  return (
+    <div>
+      <a
+        href={link}
+        id={id}
+        className="link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {title}
+      </a>
+    </div>
+  );
+};
 
-// export default Link;
+export default Link;
