@@ -64,3 +64,11 @@
 .link:hover {
   background: #d0d5dd;
 }
+
+/* socials */
+.socials {
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
