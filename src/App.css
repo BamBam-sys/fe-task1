@@ -72,3 +72,23 @@
   justify-content: center;
   gap: 24px;
 }
+
+.socials > * {
+  cursor: pointer;
+}
+
+/* footer */
+.footer {
+  max-width: 1200px;
+  width: 90%;
+  margin: 100px auto 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.082);
+  padding: 48px 0;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer p {
+  color: #667085;
+}

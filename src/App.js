@@ -7,12 +7,14 @@ import Socials from './components/Socials';
 
 function App() {
   return (
-    <div className="app">
-      <Profile />
-      <Links />
-      <Socials />
+    <>
+      <div className="app">
+        <Profile />
+        <Links />
+        <Socials />
+      </div>
       <Footer />
-    </div>
+    </>
   );
 }
 
