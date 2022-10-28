@@ -35,6 +35,11 @@
   position: absolute;
   top: -15%;
   right: 20%;
+  cursor: pointer;
+}
+
+.share-btn_mobile {
+  display: none;
 }
 
 /* links */
@@ -91,4 +96,24 @@
 
 .footer p {
   color: #667085;
+}
+
+/* media queries */
+@media (max-width: 720px) {
+  .share-btn {
+    display: none;
+  }
+
+  .share-btn_mobile {
+    display: block;
+    position: absolute;
+    top: -15%;
+    right: 0;
+    cursor: pointer;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 16px;
+  }
 }
