@@ -1,8 +1,9 @@
 import React from 'react';
+import '../sass/textarea.scss';
 
 const Textarea = ({ name, label, id, placeholder }) => {
   return (
-    <div>
+    <div className="textarea">
       <label htmlFor={name}>
         <div className="">{label}</div>
       </label>
