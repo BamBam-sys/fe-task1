@@ -1,5 +1,5 @@
 import React from 'react';
-import { Input } from '../components';
+import { Input, Textarea } from '../components';
 import '../sass/contact.scss';
 
 const Contact = () => {
@@ -31,7 +31,12 @@ const Contact = () => {
             placeholder="yourname@gmail.com"
             type="email"
           />
-          {/* <TextArea /> */}
+          <Textarea
+            id="message"
+            label="Message"
+            name="message"
+            placeholder={`Send me a message and i'll reply as soon as possible`}
+          />
         </form>
       </div>
     </div>
