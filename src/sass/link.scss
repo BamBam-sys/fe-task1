@@ -1,0 +1,18 @@
+.link,
+.link:link,
+.link:visited {
+  display: block;
+  width: 100%;
+  background: #eaecf0;
+  text-align: center;
+  padding: 2.4rem 0;
+  text-decoration: none;
+  border: 1px solid #eaecf0;
+  border-radius: 0.8rem;
+  color: inherit;
+  transition: all 300ms ease-in-out;
+}
+
+.link:hover {
+  background: #d0d5dd;
+}

@@ -1,0 +1,50 @@
+@import '../sass/mediaQueries.scss';
+
+.profile-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+
+  #profile__img {
+    width: 8.8rem;
+    height: 8.8rem;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 40% 40%;
+  }
+
+  #twitter {
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 700;
+  }
+
+  #slack {
+    display: none;
+  }
+
+  .share-btn {
+    position: absolute;
+    top: -15%;
+    right: 20%;
+    cursor: pointer;
+
+    @include breakpoint(md) {
+      display: none;
+    }
+  }
+
+  .share-btn_mobile {
+    display: none;
+
+    @include breakpoint(md) {
+      display: block;
+      position: absolute;
+      top: -15%;
+      right: 0;
+      cursor: pointer;
+    }
+  }
+}

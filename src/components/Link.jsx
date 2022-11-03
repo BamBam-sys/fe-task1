@@ -1,18 +1,17 @@
 import React from 'react';
+import '../sass/link.scss';
 
 const Link = ({ item: { link, title, id } }) => {
   return (
-    <div>
-      <a
-        href={link}
-        id={id}
-        className="link"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {title}
-      </a>
-    </div>
+    <a
+      href={link}
+      id={id}
+      className="link"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {title}
+    </a>
   );
 };
 

@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@import './sass/mediaQueries.scss';
+@import './sass/resets.scss';
+
+.container {
+  max-width: 115.2rem;
+  width: 90%;
+  margin: 6.4rem auto 0;
+}

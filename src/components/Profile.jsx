@@ -3,6 +3,8 @@ import avatar from '../assets/avatar.jpg';
 import share from '../assets/share.png';
 import share_mobile from '../assets/share_mobile.png';
 
+import '../sass/profile.scss';
+
 const Profile = () => {
   return (
     <>

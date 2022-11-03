@@ -1,6 +1,8 @@
 import React from 'react';
 import Link from './Link';
 
+import '../sass/links.scss';
+
 const links = [
   {
     title: 'Twitter Link',
