@@ -10,35 +10,47 @@ const Contact = () => {
         <p>Hi there, contact me to ask me about anything you have in mind.</p>
 
         <form>
-          <Input
-            id="first_name"
-            label="First name"
-            name="first_name"
-            placeholder="Enter your first name"
-            type="text"
-          />
-          <Input
-            id="last_name"
-            label="Last name"
-            name="last_name"
-            placeholder="Enter your last name"
-            type="text"
-          />
-          <Input
-            id="email"
-            label="Email"
-            name="email"
-            placeholder="yourname@gmail.com"
-            type="email"
-          />
-          <Textarea
-            id="message"
-            label="Message"
-            name="message"
-            placeholder={`Send me a message and i'll reply as soon as possible`}
-          />
-          <Checkbox id="check" />
-          <Button />
+          <div className="first-name">
+            <Input
+              id="first_name"
+              label="First name"
+              name="first_name"
+              placeholder="Enter your first name"
+              type="text"
+            />
+          </div>
+          <div className="last-name">
+            <Input
+              id="last_name"
+              label="Last name"
+              name="last_name"
+              placeholder="Enter your last name"
+              type="text"
+            />
+          </div>
+          <div className="email">
+            <Input
+              id="email"
+              label="Email"
+              name="email"
+              placeholder="yourname@gmail.com"
+              type="email"
+            />
+          </div>
+          <div className="textarea">
+            <Textarea
+              id="message"
+              label="Message"
+              name="message"
+              placeholder={`Send me a message and i'll reply as soon as possible`}
+            />
+          </div>
+          <div className="check">
+            <Checkbox id="check" />
+          </div>
+          <div className="btn">
+            <Button />
+          </div>
         </form>
       </div>
     </div>

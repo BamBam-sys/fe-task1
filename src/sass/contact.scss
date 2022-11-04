@@ -1,3 +1,33 @@
-.contact {
+.container.contact {
+  max-width: 78rem;
   padding-top: 15.6rem;
+
+  h2 {
+    font-weight: 600;
+    font-size: 3.6rem;
+    line-height: 44px;
+    letter-spacing: -0.04rem;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 30px;
+    color: #475467;
+    margin-bottom: 4.8rem;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.4rem;
+
+    .email,
+    .textarea,
+    .check,
+    .btn {
+      grid-column: 1/-1;
+    }
+  }
 }
