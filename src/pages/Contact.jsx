@@ -1,5 +1,5 @@
 import React from 'react';
-import { Checkbox, Input, Textarea } from '../components';
+import { Button, Checkbox, Input, Textarea } from '../components';
 import '../sass/contact.scss';
 
 const Contact = () => {
@@ -38,6 +38,7 @@ const Contact = () => {
             placeholder={`Send me a message and i'll reply as soon as possible`}
           />
           <Checkbox id="check" />
+          <Button />
         </form>
       </div>
     </div>
