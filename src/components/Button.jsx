@@ -3,7 +3,7 @@ import '../sass/button.scss';
 
 const Button = ({ check }) => {
   return (
-    <button className="submit-btn" disabled={!check}>
+    <button id="btn__submit" className="submit-btn" disabled={!check}>
       Send message
     </button>
   );
