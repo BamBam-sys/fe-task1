@@ -1,7 +1,8 @@
 import React from 'react';
-import Link from './Link';
+import BtnLink from './BtnLink';
 
 import '../sass/links.scss';
+import { Link } from 'react-router-dom';
 
 const links = [
   {
@@ -40,8 +41,11 @@ const Links = () => {
   return (
     <section className="links">
       {links.map((item) => (
-        <Link item={item} key={item.id} />
+        <BtnLink item={item} key={item.id} />
       ))}
+      <Link to="/contact" id="contact" className="link">
+        Contact Me
+      </Link>
     </section>
   );
 };

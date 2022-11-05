@@ -1,5 +1,5 @@
 import Footer from './Footer';
-import Link from './Link';
+import BtnLink from './BtnLink';
 import Links from './Links';
 import Profile from './Profile';
 import Socials from './Socials';
@@ -11,7 +11,7 @@ import ErrorMessage from './ErrorMessage';
 
 export {
   Footer,
-  Link,
+  BtnLink,
   Links,
   Profile,
   Socials,

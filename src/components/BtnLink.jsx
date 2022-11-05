@@ -1,12 +1,12 @@
 import React from 'react';
-import '../sass/link.scss';
+import '../sass/btnLink.scss';
 
-const Link = ({ item: { link, title, id } }) => {
+const BtnLink = ({ item: { link, title, id } }) => {
   return (
     <a
       href={link}
       id={id}
-      className="link"
+      className="btnLinkComponent"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -15,4 +15,4 @@ const Link = ({ item: { link, title, id } }) => {
   );
 };
 
-export default Link;
+export default BtnLink;
