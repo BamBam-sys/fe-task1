@@ -29,6 +29,10 @@ body {
   @include breakpoint(md) {
     font-size: 56.25%;
   }
+
+  @include breakpoint(sm) {
+    font-size: 50%;
+  }
 }
 
 /*

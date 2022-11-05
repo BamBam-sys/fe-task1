@@ -1,11 +1,11 @@
 import React from 'react';
 import '../sass/checkbox.scss';
 
-const Checkbox = (id) => {
+const Checkbox = ({ id, handleCheck }) => {
   return (
     <div className="checkbox">
-      <input type="checkbox" id={id} name={id} />
-      <label for={id}>
+      <input type="checkbox" id={id} onClick={handleCheck} />
+      <label htmlFor={id}>
         You agree to providing your data to Ayobami who may contact you.
       </label>
     </div>

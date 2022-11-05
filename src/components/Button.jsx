@@ -1,13 +1,9 @@
 import React from 'react';
 import '../sass/button.scss';
 
-const Button = () => {
+const Button = ({ check }) => {
   return (
-    <button
-      className="submit-btn"
-      type="submit"
-      onClick={(e) => e.preventDefault()}
-    >
+    <button className="submit-btn" disabled={!check}>
       Send message
     </button>
   );

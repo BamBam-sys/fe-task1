@@ -1,3 +1,5 @@
+@import '../sass/mediaQueries.scss';
+
 .container.contact {
   max-width: 78rem;
   padding-top: 15.6rem;
@@ -22,6 +24,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2.4rem;
+
+    @include breakpoint(md) {
+      grid-template-columns: 1fr;
+    }
 
     .email,
     .textarea,

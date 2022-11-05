@@ -1,21 +1,34 @@
 import React from 'react';
 import '../sass/input.scss';
+import ErrorMessage from './ErrorMessage';
 
-const Input = ({ name, label, id, type, placeholder }) => {
+const Input = ({
+  name,
+  label,
+  id,
+  type,
+  placeholder,
+  value,
+  handleInputChange,
+  error,
+}) => {
+  const errorStyles = error ? 'error' : '';
+
   return (
     <div className="input">
       <label htmlFor={name}>
         <div className="">{label}</div>
       </label>
       <input
-        className=""
+        className={errorStyles}
         name={name}
         id={id}
         type={type}
-        // onChange={onChange}
-        // value={value}
+        onChange={handleInputChange}
+        value={value}
         placeholder={placeholder}
       />
+      {error ? <ErrorMessage message={error} /> : null}
     </div>
   );
 };
